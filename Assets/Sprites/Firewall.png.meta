@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: c2aea0cc4e418504d8c1ed3f6724dab5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4727848491673685825
+    second: Firewall_0
+  - first:
+      213: 7068168538662857152
+    second: Firewall_1
+  - first:
+      213: 3769490375928367945
+    second: Firewall_2
+  - first:
+      213: 8279407904533223595
+    second: Firewall_3
+  - first:
+      213: 1718253279262382105
+    second: Firewall_4
+  - first:
+      213: 4157492788671926767
+    second: Firewall_5
+  - first:
+      213: 5045292087064182128
+    second: Firewall_6
+  - first:
+      213: -4419945679213092305
+    second: Firewall_7
+  - first:
+      213: -8800698940558244959
+    second: Firewall_8
+  - first:
+      213: 8848997385047886632
+    second: Firewall_9
+  - first:
+      213: -7168633289338010951
+    second: Firewall_10
+  - first:
+      213: -517378459951753055
+    second: Firewall_11
+  - first:
+      213: -2897912292820127532
+    second: Firewall_12
+  - first:
+      213: -779475591052907614
+    second: Firewall_13
+  - first:
+      213: 1996871215642786320
+    second: Firewall_14
+  - first:
+      213: 6746852971811965506
+    second: Firewall_15
+  - first:
+      213: 3728539648589756486
+    second: Firewall_16
+  - first:
+      213: 8217746063063737576
+    second: Firewall_17
+  - first:
+      213: -7174851627757586261
+    second: Firewall_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firewall_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 252
+        width: 200
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb07ce598de436eb0800000000000000
+      internalID: -4727848491673685825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_1
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 252
+        width: 200
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9679f46dd271260800000000000000
+      internalID: 7068168538662857152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_3
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 253
+        width: 201
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8934c7f9d56e270800000000000000
+      internalID: 8279407904533223595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_5
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 252
+        width: 201
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1d909f9a162b930800000000000000
+      internalID: 4157492788671926767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_6
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 252
+        width: 203
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07dbc8d0c6a740640800000000000000
+      internalID: 5045292087064182128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_8
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2
+        width: 199
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a38ed011f2add580800000000000000
+      internalID: -8800698940558244959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_11
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 2
+        width: 200
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a813282807e1d8f0800000000000000
+      internalID: -517378459951753055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_12
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 212
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0f73c9f1c88c7d0800000000000000
+      internalID: -2897912292820127532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_13
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 2
+        width: 215
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab243c641fbe25f0800000000000000
+      internalID: -779475591052907614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewall_14
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 2
+        width: 199
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a379e6acf46bb10800000000000000
+      internalID: 1996871215642786320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e6c0092d1f4fbbf4b8ef83df91ecf4d4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Firewall_0: -4727848491673685825
+      Firewall_1: 7068168538662857152
+      Firewall_11: -517378459951753055
+      Firewall_12: -2897912292820127532
+      Firewall_13: -779475591052907614
+      Firewall_14: 1996871215642786320
+      Firewall_3: 8279407904533223595
+      Firewall_4: 1718253279262382105
+      Firewall_5: 4157492788671926767
+      Firewall_6: 5045292087064182128
+      Firewall_8: -8800698940558244959
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
