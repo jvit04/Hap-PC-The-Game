@@ -7,29 +7,22 @@ public class GameManager : MonoBehaviour
     [Header("Puntaje")]
     public int score;
     public TMP_Text textScore;
-    public string scorePrefix = "PUNTOS ";
+    public string scorePrefix = "Puntos: ";
 
     [Header("Intentos")]
-    public int maxAttempts = 3;
     public TMP_Text textAttempts;
-    public string attemptsPrefix = "INTENTOS ";
+    public string attemptsPrefix = "Intento: ";
 
-    [Header("Muerte")]
-    public float delayBeforeRestart = 0.6f;
+    [Header("Game Over")]
+    [Tooltip("Reinicio automatico provisional mientras no exista la pantalla de Game Over.")]
+    public bool autoRestartOnGameOver = true;
+    public float autoRestartDelay = 1.5f;
 
-    // Se mantiene entre recargas de escena para que los intentos no vuelvan a 3.
-    private static int attemptsRemaining = -1;
-    private static bool runIsOver;
+    // Cuenta cuantas veces se ha intentado pasar el juego. Sobrevive a las
+    // recargas de escena y solo vuelve a 1 cuando se cierra el juego.
+    private static int attemptNumber = 1;
 
-    private bool isRestarting;
-
-    private void Awake()
-    {
-        if (attemptsRemaining < 0)
-        {
-            attemptsRemaining = maxAttempts;
-        }
-    }
+    private bool runIsOver;
 
     private void Start()
     {
@@ -42,10 +35,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int AttemptsRemaining => attemptsRemaining;
+    public int AttemptNumber => attemptNumber;
 
     public void AddScore(int amount = 1)
     {
+        if (runIsOver)
+        {
+            return;
+        }
+
         score += amount;
         UpdateScoreText();
 
@@ -56,49 +54,25 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// El jugador murio: descuenta un intento y reinicia, o termina la partida.
+    /// El jugador choco o cayo: se acaba la partida y se muestra Game Over.
     /// </summary>
-    public void LoseAttempt()
+    public void PlayerDied()
     {
-        if (isRestarting || runIsOver)
+        if (runIsOver)
         {
             return;
         }
 
-        attemptsRemaining--;
-        UpdateAttemptsText();
+        runIsOver = true;
 
         if (AudioManager.Instance != null)
         {
             AudioManager.Instance.PlayHit();
-        }
-
-        if (attemptsRemaining <= 0)
-        {
-            attemptsRemaining = 0;
-            runIsOver = true;
-            GameOver();
-            return;
-        }
-
-        isRestarting = true;
-        Invoke(nameof(ReloadScene), Mathf.Max(0f, delayBeforeRestart));
-    }
-
-    /// <summary>
-    /// Se quedo sin intentos. Aqui se enganchara la pantalla de Game Over.
-    /// </summary>
-    private void GameOver()
-    {
-        Debug.Log("GAME OVER - sin intentos");
-
-        if (AudioManager.Instance != null)
-        {
             AudioManager.Instance.StopMusic();
             AudioManager.Instance.PlayDefeat();
         }
 
-        // TODO: mostrar la pantalla de Game Over del companero.
+        GameOver();
     }
 
     /// <summary>
@@ -123,18 +97,36 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Vuelve a dejar la partida en cero. Lo usara el boton "Jugar" del menu.
+    /// Aqui se enganchara la pantalla de Game Over del companero.
+    /// Su boton "Reintentar" debe llamar a Retry().
+    /// </summary>
+    private void GameOver()
+    {
+        Debug.Log("GAME OVER - intento numero " + attemptNumber);
+
+        // TODO: reemplazar por la pantalla de Game Over.
+        if (autoRestartOnGameOver)
+        {
+            Invoke(nameof(Retry), Mathf.Max(0.1f, autoRestartDelay));
+        }
+    }
+
+    /// <summary>
+    /// Empieza un intento nuevo: sube el contador y recarga el nivel.
+    /// </summary>
+    public void Retry()
+    {
+        attemptNumber++;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    /// <summary>
+    /// Deja el contador en 1. Lo usara el boton "Jugar" del menu de inicio.
     /// </summary>
     public static void ResetRun()
     {
-        attemptsRemaining = -1;
-        runIsOver = false;
+        attemptNumber = 1;
         AudioManager.ResetStartClip();
-    }
-
-    private void ReloadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void UpdateScoreText()
@@ -149,7 +141,7 @@ public class GameManager : MonoBehaviour
     {
         if (textAttempts != null)
         {
-            textAttempts.text = attemptsPrefix + attemptsRemaining;
+            textAttempts.text = attemptsPrefix + attemptNumber;
         }
     }
 }

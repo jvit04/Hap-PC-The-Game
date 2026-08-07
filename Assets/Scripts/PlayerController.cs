@@ -270,7 +270,7 @@ public class PlayerController : MonoBehaviour
 
         if (myGameManager != null)
         {
-            myGameManager.LoseAttempt();
+            myGameManager.PlayerDied();
         }
         else
         {

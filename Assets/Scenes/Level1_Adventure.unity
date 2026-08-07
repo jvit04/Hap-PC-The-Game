@@ -842,10 +842,10 @@ MonoBehaviour:
   score: 0
   textScore: {fileID: 1139855289}
   scorePrefix: 'Puntos: '
-  maxAttempts: 3
   textAttempts: {fileID: 1376594460}
-  attemptsPrefix: 'Intentos: '
-  delayBeforeRestart: 0.6
+  attemptsPrefix: 'Intento: '
+  autoRestartOnGameOver: 1
+  autoRestartDelay: 1.5
 --- !u!4 &295414580
 Transform:
   m_ObjectHideFlags: 0
