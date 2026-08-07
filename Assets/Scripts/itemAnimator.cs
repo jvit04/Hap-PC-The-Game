@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteAnimator : MonoBehaviour
+public class itemAnimator : MonoBehaviour
 {
     public Sprite[] mySprites;      
     public float frameRate = 0.08f; 
