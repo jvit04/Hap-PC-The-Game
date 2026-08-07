@@ -13,6 +13,10 @@ public class GameManager : MonoBehaviour
     public TMP_Text textAttempts;
     public string attemptsPrefix = "Intento: ";
 
+    [Header("Victoria")]
+    [Tooltip("Segundos entre el sonido del portal y la fanfarria de victoria.")]
+    public float victoryJingleDelay = 0.7f;
+
     [Header("Game Over")]
     [Tooltip("Reinicio automatico provisional mientras no exista la pantalla de Game Over.")]
     public bool autoRestartOnGameOver = true;
@@ -90,10 +94,20 @@ public class GameManager : MonoBehaviour
 
         if (AudioManager.Instance != null)
         {
-            AudioManager.Instance.PlayVictory();
+            // Primero el remolino del portal, y despues la fanfarria.
+            AudioManager.Instance.PlayPortal();
+            Invoke(nameof(PlayVictoryJingle), victoryJingleDelay);
         }
 
         // TODO: pantalla de victoria / transicion al nivel 2.
+    }
+
+    private void PlayVictoryJingle()
+    {
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayVictory();
+        }
     }
 
     /// <summary>

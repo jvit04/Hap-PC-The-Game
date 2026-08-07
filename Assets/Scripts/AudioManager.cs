@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip coinClip;
     public AudioClip hitClip;
     public AudioClip startClip;
+    public AudioClip portalClip;
     public AudioClip victoryClip;
     public AudioClip defeatClip;
     [Range(0f, 1f)] public float sfxVolume = 0.8f;
@@ -55,6 +56,8 @@ public class AudioManager : MonoBehaviour
     public void PlayCoin() => PlaySfx(coinClip);
 
     public void PlayHit() => PlaySfx(hitClip);
+
+    public void PlayPortal() => PlaySfx(portalClip);
 
     public void PlayVictory() => PlaySfx(victoryClip);
 
