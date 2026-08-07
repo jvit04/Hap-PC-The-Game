@@ -21,6 +21,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip defeatClip;
     [Range(0f, 1f)] public float sfxVolume = 0.8f;
 
+    [Header("Disparo")]
+    public AudioClip shootClip;
+    [Tooltip("Volumen aparte: al disparar en automatico los tiros se solapan.")]
+    [Range(0f, 1f)] public float shootVolume = 0.35f;
+
     private AudioSource musicSource;
     private AudioSource sfxSource;
 
@@ -46,11 +51,23 @@ public class AudioManager : MonoBehaviour
         sfxSource.loop = false;
         sfxSource.playOnAwake = false;
 
-        if (musicClip != null)
+        PlayMusic();
+    }
+
+    /// <summary>
+    /// Arranca (o reanuda) la musica de fondo. Se llama al empezar cada intento,
+    /// porque la derrota la detiene y este objeto sobrevive a la recarga de escena.
+    /// </summary>
+    public void PlayMusic()
+    {
+        if (musicClip == null || musicSource == null || musicSource.isPlaying)
         {
-            musicSource.clip = musicClip;
-            musicSource.Play();
+            return;
         }
+
+        musicSource.clip = musicClip;
+        musicSource.volume = musicVolume;
+        musicSource.Play();
     }
 
     public void PlayCoin() => PlaySfx(coinClip);
@@ -58,6 +75,14 @@ public class AudioManager : MonoBehaviour
     public void PlayHit() => PlaySfx(hitClip);
 
     public void PlayPortal() => PlaySfx(portalClip);
+
+    public void PlayShoot()
+    {
+        if (shootClip != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(shootClip, shootVolume);
+        }
+    }
 
     public void PlayVictory() => PlaySfx(victoryClip);
 

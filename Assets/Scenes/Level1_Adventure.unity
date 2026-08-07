@@ -624,7 +624,8 @@ GameObject:
   m_Component:
   - component: {fileID: 258656477}
   - component: {fileID: 258656479}
-  - component: {fileID: 258656478}
+  - component: {fileID: 258656481}
+  - component: {fileID: 258656480}
   m_Layer: 0
   m_Name: Level1Exit
   m_TagString: Finish
@@ -641,58 +642,12 @@ Transform:
   m_GameObject: {fileID: 258656476}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 86, y: -1.6, z: 0}
-  m_LocalScale: {x: 0.14, y: 0.14, z: 1}
+  m_LocalPosition: {x: 86, y: -0.8, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1873659551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &258656478
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258656476}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.18, y: 13.47}
-    newSize: {x: 19.18, y: 13.47}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 19.18, y: 13.47}
-  m_EdgeRadius: 0
 --- !u!212 &258656479
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -737,7 +692,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3499505387543555228, guid: 92254239a109f83428a8745729ec4611, type: 3}
+  m_Sprite: {fileID: 907259673133486559, guid: cb6609968a13aa84d9a7e9f1713f0937, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -748,6 +703,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &258656480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258656476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d1dd2a6b045414daf134032a0f99b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: -45
+  pulseAmount: 0.04
+  pulseSpeed: 1.8
+  glow: {fileID: 0}
+  glowMinAlpha: 0.35
+  glowMaxAlpha: 0.9
+--- !u!58 &258656481
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258656476}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1.6
 --- !u!1001 &275813999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -844,6 +853,7 @@ MonoBehaviour:
   scorePrefix: 'Puntos: '
   textAttempts: {fileID: 1376594460}
   attemptsPrefix: 'Intento: '
+  victoryJingleDelay: 0.7
   autoRestartOnGameOver: 1
   autoRestartDelay: 1.5
 --- !u!4 &295414580
@@ -4558,9 +4568,12 @@ MonoBehaviour:
   coinClip: {fileID: 8300000, guid: 15341e6d54d5f034e9e3449965299aa2, type: 3}
   hitClip: {fileID: 8300000, guid: 36daf0936ba02c44a939c80031b5984d, type: 3}
   startClip: {fileID: 8300000, guid: e57eb83ecb607014e9185ff8ea6c129f, type: 3}
+  portalClip: {fileID: 8300000, guid: d4658ca21cf87414a8b9a3dc97f32497, type: 3}
   victoryClip: {fileID: 8300000, guid: 3903f06320f526541aea5dc517331391, type: 3}
   defeatClip: {fileID: 8300000, guid: 98f6640b265b8cc43925311468eb758c, type: 3}
   sfxVolume: 0.8
+  shootClip: {fileID: 8300000, guid: d0ab4db1929d35e4da6fc3b5a8533286, type: 3}
+  shootVolume: 0.35
 --- !u!4 &1779858356
 Transform:
   m_ObjectHideFlags: 0

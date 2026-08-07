@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
 
         if (AudioManager.Instance != null)
         {
+            AudioManager.Instance.PlayMusic();
             AudioManager.Instance.PlayStartOnce();
         }
     }

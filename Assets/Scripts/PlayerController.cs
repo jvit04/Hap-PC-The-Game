@@ -175,6 +175,11 @@ public class PlayerController : MonoBehaviour
             bulletController.Initialize(facingDirection);
         }
 
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayShoot();
+        }
+
         if (myAnimator != null)
         {
             myAnimator.SetTrigger("Shoot");
