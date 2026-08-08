@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -133,20 +133,20 @@ TextureImporter:
       name: botnet death_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 47
-        width: 295
-        height: 425
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 443
+        height: 485
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3273f69b9ec4aae10800000000000000
-      internalID: 2209663133900814115
+      spriteID: 0919cb8e460680f4a8735eb183c42e84
+      internalID: 1477040750
       vertices: []
       indices: 
       edges: []
@@ -155,20 +155,20 @@ TextureImporter:
       name: botnet death_1
       rect:
         serializedVersion: 2
-        x: 473
-        y: 44
-        width: 342
-        height: 415
+        x: 443
+        y: 0
+        width: 443
+        height: 485
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 49d59ff0161e18500800000000000000
-      internalID: 396846049181392276
+      spriteID: 66da03d1e0c3e7641abf29bb21dbdde8
+      internalID: -496497249
       vertices: []
       indices: 
       edges: []
@@ -177,20 +177,20 @@ TextureImporter:
       name: botnet death_2
       rect:
         serializedVersion: 2
-        x: 910
-        y: 31
-        width: 438
-        height: 425
+        x: 886
+        y: 0
+        width: 443
+        height: 485
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4e46c21bad20349c0800000000000000
-      internalID: -3944305710347819804
+      spriteID: 7b8c167c9bb1a784b957fc2cec3c698b
+      internalID: 268858707
       vertices: []
       indices: 
       edges: []
@@ -199,174 +199,20 @@ TextureImporter:
       name: botnet death_3
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 442
-        width: 83
-        height: 54
+        x: 1329
+        y: 0
+        width: 443
+        height: 485
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e94e46e024647540800000000000000
-      internalID: 5004735178381085154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_4
-      rect:
-        serializedVersion: 2
-        x: 1155
-        y: 416
-        width: 136
-        height: 104
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 199a5d7d1b3e07300800000000000000
-      internalID: 247948332475197841
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_5
-      rect:
-        serializedVersion: 2
-        x: 1270
-        y: 450
-        width: 7
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb99e1cd92dc2f650800000000000000
-      internalID: 6265295611296127423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_6
-      rect:
-        serializedVersion: 2
-        x: 1390
-        y: 35
-        width: 325
-        height: 312
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10f2b4b281234f760800000000000000
-      internalID: 7490667159610928897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_7
-      rect:
-        serializedVersion: 2
-        x: 1620
-        y: 341
-        width: 6
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6601e40139b5dab0800000000000000
-      internalID: -4983873792429193617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_8
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 234
-        width: 9
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7673dd04f85abbf90800000000000000
-      internalID: -6936768766346971289
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_9
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 234
-        width: 9
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 86f60e1b6fedc2340800000000000000
-      internalID: 4840488850644037480
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: botnet death_10
-      rect:
-        serializedVersion: 2
-        x: 1338
-        y: 162
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd78e3489343c6790800000000000000
-      internalID: -7535590654861211685
+      spriteID: c8b47da7933073d4497d315384fd0958
+      internalID: 614068665
       vertices: []
       indices: 
       edges: []
@@ -375,7 +221,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7553ac69053a63a408dca5f0540c492a
     internalID: 0
     vertices: []
     indices: 
@@ -384,7 +230,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      botnet death_0: 1477040750
+      botnet death_1: -496497249
+      botnet death_2: 268858707
+      botnet death_3: 614068665
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

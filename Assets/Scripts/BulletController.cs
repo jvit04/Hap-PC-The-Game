@@ -1,34 +1,67 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class BulletController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private Rigidbody2D myrigidbody2D;
     public float bulletSpeed = 10f;
-   public GameManager myGameManager;
-    void Start()
+    public float lifetime = 0.3f;
+    public GameManager myGameManager;
+
+    private Rigidbody2D myRigidbody2D;
+    private SpriteRenderer mySpriteRenderer;
+    private float moveDirection = 1f;
+
+    private void Awake()
     {
-        myrigidbody2D = GetComponent<Rigidbody2D>();
-        myGameManager = FindObjectOfType<GameManager>();
+        myRigidbody2D = GetComponent<Rigidbody2D>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        myrigidbody2D.linearVelocity = new Vector2(bulletSpeed, myrigidbody2D.linearVelocity.y);
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("ItemGood"))
+        if (myGameManager == null)
         {
-
-            Destroy(collision.gameObject);
+            myGameManager = FindFirstObjectByType<GameManager>();
         }
-        else if(collision.CompareTag("ItemBad"))
+
+        Destroy(gameObject, lifetime);
+    }
+
+    private void FixedUpdate()
+    {
+        myRigidbody2D.linearVelocity = Vector2.right * (bulletSpeed * moveDirection);
+    }
+
+    public void Initialize(float direction)
+    {
+        moveDirection = direction < 0f ? -1f : 1f;
+
+        if (mySpriteRenderer != null)
         {
-            myGameManager.AddScore();
+            mySpriteRenderer.flipX = moveDirection < 0f;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("ItemBad"))
+        {
+            if (myGameManager != null)
+            {
+                myGameManager.AddScore();
+            }
+
             Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("ItemGood"))
+        {
+            // La moneda debe recogerla el jugador, no la bala.
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("DeathZone"))
+        {
+            Destroy(gameObject);
         }
     }
 }

@@ -1,128 +1,296 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movimiento")]
     public float playerJumpForce = 20f;
     public float playerSpeed = 5f;
+    public float fastFallSpeed = 12f;
+
+    [Header("Animacion")]
     public Sprite[] mySprites;
-    private int index = 0;
+    public float walkFrameDuration = 0.1f;
+    public Sprite[] jumpSprites;
+    public float jumpFrameDuration = 0.1f;
+    public Sprite[] shootSprites;
+    public float shootFrameDuration = 0.05f;
 
-    private Rigidbody2D myrigidbody2D;
-    private SpriteRenderer mySpriteRenderer;
-    
-    //Referencia al Animator
-    private Animator myAnimator;
+    [Header("Disparo")]
     public GameObject Bullet;
-   public GameManager myGameManager;
-   public Transform bulletSpawnPoint;
+    public Transform bulletSpawnPoint;
+    public float shootInterval = 0.25f;
 
-   //Variables para que deje de saltar infinitamente
-   public Transform groundCheck;
-   public float groundCheckRadius = 0.2f;
-   public LayerMask groundLayer;
-   private bool isGrounded;
-   private bool isShooting;
- 
-    void Start()
+    [Header("Deteccion del suelo")]
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+    public LayerMask groundLayer;
+
+    [Header("Referencias")]
+    public GameManager myGameManager;
+
+    private Rigidbody2D myRigidbody2D;
+    private SpriteRenderer mySpriteRenderer;
+    private Animator myAnimator;
+
+    private float horizontalInput;
+    private float nextShootTime;
+    private float facingDirection = 1f;
+    private float bulletSpawnPointX;
+    private bool isGrounded;
+    private bool jumpRequested;
+    private bool fastFallRequested;
+    private bool shootHeld;
+    private bool isDead;
+    private int spriteIndex;
+    private int jumpSpriteIndex;
+    private int shootSpriteIndex;
+
+    private void Awake()
     {
-        myrigidbody2D = GetComponent<Rigidbody2D>();
+        myRigidbody2D = GetComponent<Rigidbody2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-
-       //Se guarda el componente Animator
         myAnimator = GetComponent<Animator>();
-
-        StartCoroutine(WalkCoroutine()); 
-
-      myGameManager = FindObjectOfType<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if(groundCheck !=null)
+        if (bulletSpawnPoint != null)
         {
-            isGrounded = Physics2D.OverlapCircle(groundCheck.position,groundCheckRadius, groundLayer);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            myrigidbody2D.linearVelocity = new Vector2(myrigidbody2D.linearVelocity.x, playerJumpForce);
-        }
-        myrigidbody2D.linearVelocity = new Vector2(playerSpeed, myrigidbody2D.linearVelocity.y);
-        
-        //Controlar la animación según el salto
-        //Si la velcidad vertical (Y) no es cercana a 0, está en el aire
-        bool isAirbone =! isGrounded;
-        if (myAnimator !=null){
-            myAnimator.SetBool("isJumping",isAirbone);
-        }
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-           Instantiate(Bullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-           StartCoroutine(ShootTimer());
+            bulletSpawnPointX = Mathf.Abs(bulletSpawnPoint.localPosition.x);
         }
 
-        if(myAnimator != null)
+        if (myGameManager == null)
+        {
+            myGameManager = FindFirstObjectByType<GameManager>();
+        }
+
+        if (mySpriteRenderer != null && mySprites != null && mySprites.Length > 0)
+        {
+            StartCoroutine(WalkCoroutine());
+        }
+    }
+
+    private void Update()
+    {
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if (horizontalInput != 0f)
+        {
+            facingDirection = Mathf.Sign(horizontalInput);
+
+            if (mySpriteRenderer != null)
+            {
+                mySpriteRenderer.flipX = facingDirection < 0f;
+            }
+
+            if (bulletSpawnPoint != null)
+            {
+                Vector3 spawnPosition = bulletSpawnPoint.localPosition;
+                spawnPosition.x = bulletSpawnPointX * facingDirection;
+                bulletSpawnPoint.localPosition = spawnPosition;
+            }
+        }
+
+        UpdateGroundedState();
+
+        bool jumpKeyPressed = Input.GetKeyDown(KeyCode.W)
+            || Input.GetKeyDown(KeyCode.UpArrow)
+            || Input.GetKeyDown(KeyCode.Space);
+
+        if (jumpKeyPressed && isGrounded)
+        {
+            jumpRequested = true;
+        }
+
+        fastFallRequested = !isGrounded
+            && (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow));
+
+        shootHeld = Input.GetKey(KeyCode.E);
+
+        if (shootHeld && Time.time >= nextShootTime)
+        {
+            Shoot();
+        }
+
+        if (myAnimator != null)
+        {
+            myAnimator.SetBool("isJumping", !isGrounded);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Vector2 velocity = myRigidbody2D.linearVelocity;
+        velocity.x = horizontalInput * playerSpeed;
+
+        if (jumpRequested)
+        {
+            velocity.y = playerJumpForce;
+            jumpRequested = false;
+        }
+        else if (fastFallRequested && velocity.y > -fastFallSpeed)
+        {
+            velocity.y = -fastFallSpeed;
+        }
+
+        myRigidbody2D.linearVelocity = velocity;
+    }
+
+    private void UpdateGroundedState()
+    {
+        if (groundCheck == null)
+        {
+            isGrounded = false;
+            return;
+        }
+
+        isGrounded = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer
+        );
+    }
+
+    private void Shoot()
+    {
+        if (Bullet == null || bulletSpawnPoint == null)
+        {
+            return;
+        }
+
+        nextShootTime = Time.time + Mathf.Max(0.05f, shootInterval);
+
+        GameObject newBullet = Instantiate(
+            Bullet,
+            bulletSpawnPoint.position,
+            bulletSpawnPoint.rotation
+        );
+
+        BulletController bulletController = newBullet.GetComponent<BulletController>();
+        if (bulletController != null)
+        {
+            bulletController.Initialize(facingDirection);
+        }
+
+    //    if (AudioManager.Instance != null)
+      //  {
+     //       AudioManager.Instance.PlayShoot();
+    //    }
+
+        if (myAnimator != null)
         {
             myAnimator.SetTrigger("Shoot");
         }
-        
-        
-
     }
 
-    IEnumerator ShootTimer()
-    {
-        isShooting = true;
-        yield return new WaitForSeconds(0.25f);
-        isShooting = false;
-    }
-
-
-    IEnumerator WalkCoroutine()
+    private IEnumerator WalkCoroutine()
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.05f);
+            if (shootHeld && shootSprites != null && shootSprites.Length > 0)
+            {
+                mySpriteRenderer.sprite = shootSprites[shootSpriteIndex];
+                shootSpriteIndex = (shootSpriteIndex + 1) % shootSprites.Length;
 
-            //Concidiconal para saber si esta saltando
-            bool isAirborne = Mathf.Abs(myrigidbody2D.linearVelocity.y) > 0.1f;
+                yield return new WaitForSeconds(Mathf.Max(0.03f, shootFrameDuration));
+                continue;
+            }
 
-            if(!isAirborne && mySprites !=null && mySprites.Length>0)
-            { 
-                mySpriteRenderer.sprite = mySprites[index];
-                index++;
-                
-                if (index == 6)
+            shootSpriteIndex = 0;
+
+            if (!isGrounded && jumpSprites != null && jumpSprites.Length > 0)
+            {
+                mySpriteRenderer.sprite = jumpSprites[jumpSpriteIndex];
+                jumpSpriteIndex = (jumpSpriteIndex + 1) % jumpSprites.Length;
+
+                yield return new WaitForSeconds(Mathf.Max(0.05f, jumpFrameDuration));
+                continue;
+            }
+
+            jumpSpriteIndex = 0;
+
+            bool isWalking = isGrounded && Mathf.Abs(horizontalInput) > 0.01f;
+            if (!isWalking || mySprites == null || mySprites.Length == 0)
+            {
+                if (mySprites != null && mySprites.Length > 0)
                 {
-                    index = 0;
+                    spriteIndex = 0;
+                    mySpriteRenderer.sprite = mySprites[0];
                 }
             }
+            else
+            {
+                mySpriteRenderer.sprite = mySprites[spriteIndex];
+                spriteIndex = (spriteIndex + 1) % mySprites.Length;
+            }
+
+            yield return new WaitForSeconds(Mathf.Max(0.05f, walkFrameDuration));
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("ItemGood"))
         {
             Destroy(collision.gameObject);
-            myGameManager.AddScore();
+
+            if (myGameManager != null)
+            {
+                myGameManager.AddScore();
+            }
         }
         else if (collision.CompareTag("ItemBad"))
         {
             Destroy(collision.gameObject);
             PlayerDeath();
         }
-        else if(collision.CompareTag("DeathZone"))
+        else if (collision.CompareTag("DeathZone"))
         {
             PlayerDeath();
         }
+        else if (collision.CompareTag("Finish"))
+        {
+            if (myGameManager != null)
+            {
+          //      myGameManager.LevelComplete();
+            }
+        }
     }
 
-    void PlayerDeath()
+    private void PlayerDeath()
     {
-        SceneManager.LoadScene("SampleScene");
+        if (isDead)
+        {
+            return;
+        }
+
+        isDead = true;
+
+        // Deja de responder a los controles mientras se reinicia.
+        horizontalInput = 0f;
+        enabled = false;
+
+        if (myGameManager != null)
+        {
+          //  myGameManager.PlayerDied();
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null)
+        {
+            return;
+        }
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }
