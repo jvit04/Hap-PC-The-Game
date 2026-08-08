@@ -161,7 +161,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.83, y: 2.04}
+  m_Size: {x: 5.83, y: 12}
   m_EdgeRadius: 0.01
 --- !u!114 &-1644641571955711864
 MonoBehaviour:
@@ -176,3 +176,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 20
+  lifetime: 3
+  myGameManager: {fileID: 0}
