@@ -1,0 +1,542 @@
+fileFormatVersion: 2
+guid: 0c55570977615514f8e66b54ebeceb72
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6671619421350094123
+    second: botnetAttackSignal_0
+  - first:
+      213: -5830799418984956904
+    second: botnetAttackSignal_1
+  - first:
+      213: -1026735565712209813
+    second: botnetAttackSignal_2
+  - first:
+      213: 7039621579991903608
+    second: botnetAttackSignal_3
+  - first:
+      213: 4834424342984126525
+    second: botnetAttackSignal_4
+  - first:
+      213: 262796919438821643
+    second: botnetAttackSignal_5
+  - first:
+      213: 116646516614478394
+    second: botnetAttackSignal_6
+  - first:
+      213: -1717125437085959771
+    second: botnetAttackSignal_7
+  - first:
+      213: 4244552019113389168
+    second: botnetAttackSignal_8
+  - first:
+      213: -8768928531099010275
+    second: botnetAttackSignal_9
+  - first:
+      213: 1393062052956991216
+    second: botnetAttackSignal_10
+  - first:
+      213: -8375481537968260810
+    second: botnetAttackSignal_11
+  - first:
+      213: 4916197209631444834
+    second: botnetAttackSignal_12
+  - first:
+      213: 2395790570204082097
+    second: botnetAttackSignal_13
+  - first:
+      213: -1045381160903657764
+    second: botnetAttackSignal_14
+  - first:
+      213: -6856816725504749303
+    second: botnetAttackSignal_15
+  - first:
+      213: -4586165990084405647
+    second: botnetAttackSignal_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: botnetAttackSignal_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 905
+        width: 427
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da94d9eb75a963a0800000000000000
+      internalID: -6671619421350094123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_1
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 906
+        width: 462
+        height: 842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cf8d242d6d41fa0800000000000000
+      internalID: -5830799418984956904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_2
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1576
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b68c67f517d40c1f0800000000000000
+      internalID: -1026735565712209813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_3
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1572
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d679c8782c1b160800000000000000
+      internalID: 7039621579991903608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 908
+        width: 453
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30f1197353571340800000000000000
+      internalID: 4834424342984126525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_5
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1562
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09c737e764a5a300800000000000000
+      internalID: 262796919438821643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_6
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1555
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ab71b83696e9100800000000000000
+      internalID: 116646516614478394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1462
+        width: 33
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a934bf338b8b28e0800000000000000
+      internalID: -1717125437085959771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_8
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 1237
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cabe1a29da7ea30800000000000000
+      internalID: 4244552019113389168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 428
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b3e03f5f18e4680800000000000000
+      internalID: -8768928531099010275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 13
+        width: 464
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fee3907e86255310800000000000000
+      internalID: 1393062052956991216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_11
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 702
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6393f8a9aef44cb80800000000000000
+      internalID: -8375481537968260810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_12
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 15
+        width: 448
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f49d5a057d93440800000000000000
+      internalID: 4916197209631444834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_13
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 681
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfae3584de8f3120800000000000000
+      internalID: 2395790570204082097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_14
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 584
+        width: 34
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6b3717f5f0e71f0800000000000000
+      internalID: -1045381160903657764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_15
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 324
+        width: 44
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90115526481b7d0a0800000000000000
+      internalID: -6856816725504749303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnetAttackSignal_16
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 355
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1769a00a45aaa50c0800000000000000
+      internalID: -4586165990084405647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: 6bde954212ff67f4887df019ea66dcd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6868345472715243082
+    second: botnet intro_0
+  - first:
+      213: 8855319654860184232
+    second: botnet intro_1
+  - first:
+      213: -3797132908497676725
+    second: botnet intro_2
+  - first:
+      213: 3889083028094257055
+    second: botnet intro_3
+  - first:
+      213: -254043530529150396
+    second: botnet intro_4
+  - first:
+      213: 1254542045263429038
+    second: botnet intro_5
+  - first:
+      213: -3685995988809500332
+    second: botnet intro_6
+  - first:
+      213: 4660945801406197004
+    second: botnet intro_7
+  - first:
+      213: -3788571478412013429
+    second: botnet intro_8
+  - first:
+      213: -511953675575928975
+    second: botnet intro_9
+  - first:
+      213: -698159864195543363
+    second: botnet intro_10
+  - first:
+      213: 1643803389026675089
+    second: botnet intro_11
+  - first:
+      213: 6532946730962354522
+    second: botnet intro_12
+  - first:
+      213: -5677600741265390049
+    second: botnet intro_13
+  - first:
+      213: 4194367481410230968
+    second: botnet intro_14
+  - first:
+      213: -8895308259957248120
+    second: botnet intro_15
+  - first:
+      213: -1386076300640605823
+    second: botnet intro_16
+  - first:
+      213: -3898548262532058598
+    second: botnet intro_17
+  - first:
+      213: -2132789934189308323
+    second: botnet intro_18
+  - first:
+      213: -677518579867658606
+    second: botnet intro_19
+  - first:
+      213: 5024929653911746437
+    second: botnet intro_20
+  - first:
+      213: -8177925945697719277
+    second: botnet intro_21
+  - first:
+      213: -639992277376403192
+    second: botnet intro_22
+  - first:
+      213: 8569766598885041816
+    second: botnet intro_23
+  - first:
+      213: -2669841733196020852
+    second: botnet intro_24
+  - first:
+      213: 3861017969912878479
+    second: botnet intro_25
+  - first:
+      213: 5239457300558916816
+    second: botnet intro_26
+  - first:
+      213: -6534741614305253133
+    second: botnet intro_27
+  - first:
+      213: -164505272147778961
+    second: botnet intro_28
+  - first:
+      213: 9036513012465225897
+    second: botnet intro_29
+  - first:
+      213: 7098603337664361814
+    second: botnet intro_30
+  - first:
+      213: -4304583339563732599
+    second: botnet intro_31
+  - first:
+      213: -8606512051307383944
+    second: botnet intro_32
+  - first:
+      213: -9116120853985071271
+    second: botnet intro_33
+  - first:
+      213: 6361721656016010175
+    second: botnet intro_34
+  - first:
+      213: -3123633246516246133
+    second: botnet intro_35
+  - first:
+      213: -8916255912723287171
+    second: botnet intro_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: botnet intro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1510
+        width: 378
+        height: 647
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47107970e5067be46bef029f8e1ea089
+      internalID: 188724252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1518
+        width: 355
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38575406ab266454599b185de0e4a688
+      internalID: -333634574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_2
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1526
+        width: 372
+        height: 631
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184e17165afeda34cbe4cf30d13e5206
+      internalID: 1523794617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_3
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1529
+        width: 373
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1535937e58f16044ea705fdc7ba9e540
+      internalID: -1821539031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_4
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1529
+        width: 361
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b13748bf91127409914148c7ec67d7
+      internalID: 533675943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 845
+        width: 369
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c39f9647f93f0d43bf252b07a7579ff
+      internalID: -1224765127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_6
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 853
+        width: 368
+        height: 571
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2991e0b80e0c584480d790c1aaf2ff5
+      internalID: -1319811758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_7
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 845
+        width: 364
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913260e2e0d0fd140b9a7a1aa33f6fbe
+      internalID: -856250167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_8
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 837
+        width: 368
+        height: 601
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f2f9f2303905846bbc52b5ff657f7f
+      internalID: 1085017612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_9
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 835
+        width: 369
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fefa9dc951a644e8877c36e3a90ac0
+      internalID: -1660470460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 369
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d34cdbfb140f04583867db3314052c
+      internalID: -625233404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_11
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 369
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c270df00609c5cf488da7f30c05f8fad
+      internalID: 1851619902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_12
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 369
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5a753168dbaf84ab2ddb7a4a8b1c4b
+      internalID: -1823514976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_13
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 0
+        width: 369
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98cfbca59bc3ba40957faf0106dc4f8
+      internalID: 1278285242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: botnet intro_14
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 369
+        height: 719
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64cbb51a9b16c448836507e5c77c147
+      internalID: 1972095456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2441a310d6ebbf749b374ad6c1ccda90
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      botnet intro_0: 188724252
+      botnet intro_1: -333634574
+      botnet intro_10: -625233404
+      botnet intro_11: 1851619902
+      botnet intro_12: -1823514976
+      botnet intro_13: 1278285242
+      botnet intro_14: 1972095456
+      botnet intro_2: 1523794617
+      botnet intro_3: -1821539031
+      botnet intro_4: 533675943
+      botnet intro_5: -1224765127
+      botnet intro_6: -1319811758
+      botnet intro_7: -856250167
+      botnet intro_8: 1085017612
+      botnet intro_9: -1660470460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
