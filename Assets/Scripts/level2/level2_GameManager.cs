@@ -31,6 +31,9 @@ public class Level2_GameManager : MonoBehaviour
     public GameObject botonReiniciar;
     public GameObject botonNivel1;
     private int monedasRecogidas = 0;
+    [Header("Sistema de Monedas")]
+    public GameObject[] monedasDelNivel; 
+    public float tiempoAparicionMonedas = 3f; // Segundos entre cada aparición
     void Awake()
     {
         myAudioSource = GetComponent<AudioSource>();
@@ -55,6 +58,13 @@ public class Level2_GameManager : MonoBehaviour
         {
             myAudioSource.PlayOneShot(startSound);
         }
+        foreach (GameObject moneda in monedasDelNivel)
+        {
+            if (moneda != null) moneda.SetActive(false);
+        }
+
+        // Iniciar la aparición periódica
+        StartCoroutine(AparecerMonedasPeriodicamente());
 
         OnIntroFinished(); 
         ActualizarTextos();
@@ -104,6 +114,22 @@ public void AddScore()
     {
         Debug.Log("GameManager: ¡Jefe derrotado! Iniciando secuencia de victoria...");
         StartCoroutine(VictorySequence());
+    }
+
+private IEnumerator AparecerMonedasPeriodicamente()
+    {
+        // Espera unos segundos antes de que aparezca la primera
+        yield return new WaitForSeconds(2f);
+
+        foreach (GameObject moneda in monedasDelNivel)
+        {
+            if (moneda != null)
+            {
+                moneda.SetActive(true);
+                // Espera el tiempo designado antes de encender la siguiente
+                yield return new WaitForSeconds(tiempoAparicionMonedas); 
+            }
+        }
     }
 
     private IEnumerator VictorySequence()
@@ -187,6 +213,6 @@ public void AddScore()
     // Esta función la usará el botón para regresar al Nivel 1 
     public void VolverAlNivel1()
     {
-        SceneManager.LoadScene("Nivel1"); 
+        SceneManager.LoadScene("Level1_Adventure"); 
     }
 }

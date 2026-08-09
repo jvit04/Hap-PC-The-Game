@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3158790645712306412}
   - component: {fileID: 4261658650510307682}
   - component: {fileID: 4059527301869921364}
-  - component: {fileID: 6140867071173886371}
+  - component: {fileID: -5025160830874643157}
   m_Layer: 7
   m_Name: bala_0
   m_TagString: Untagged
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.83, y: 2.04}
   m_EdgeRadius: 0.01
---- !u!114 &6140867071173886371
+--- !u!114 &-5025160830874643157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,8 +172,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5505565898394202133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb718024e2983d144a1fbc3e9549aff0, type: 3}
+  m_Script: {fileID: 11500000, guid: 651c24906a9a66d4ba2f336fc5b277b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
+  lifetime: 0.3
   myGameManager: {fileID: 0}
