@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      botnetAttackSignal_0: -6671619421350094123
+      botnetAttackSignal_1: -5830799418984956904
+      botnetAttackSignal_10: 1393062052956991216
+      botnetAttackSignal_11: -8375481537968260810
+      botnetAttackSignal_12: 4916197209631444834
+      botnetAttackSignal_13: 2395790570204082097
+      botnetAttackSignal_14: -1045381160903657764
+      botnetAttackSignal_15: -6856816725504749303
+      botnetAttackSignal_16: -4586165990084405647
+      botnetAttackSignal_2: -1026735565712209813
+      botnetAttackSignal_3: 7039621579991903608
+      botnetAttackSignal_4: 4834424342984126525
+      botnetAttackSignal_5: 262796919438821643
+      botnetAttackSignal_6: 116646516614478394
+      botnetAttackSignal_7: -1717125437085959771
+      botnetAttackSignal_8: 4244552019113389168
+      botnetAttackSignal_9: -8768928531099010275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

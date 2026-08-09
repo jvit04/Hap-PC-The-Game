@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      botnetfase2_0: -6863016831914857271
+      botnetfase2_1: -2704864173085980064
+      botnetfase2_2: -421670027588547276
+      botnetfase2_3: -8281934842637177419
+      botnetfase2_4: 1097130696988370098
+      botnetfase2_5: 9141965251098788284
+      botnetfase2_6: -2370198559793202286
+      botnetfase2_7: 8398663929106155998
+      botnetfase2_8: 2166974066920933744
+      botnetfase2_9: 8479746851394319154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
