@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &19809268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 1977535504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &94114816
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,6 +199,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94114816}
   m_CullTransparentMesh: 1
+--- !u!1 &158354148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 1030165894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &170821307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 1810336413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &213805014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 966240429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &255036879
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,14 +561,14 @@ MonoBehaviour:
   jumpFrameDuration: 0.1
   shootSprites: []
   shootFrameDuration: 0.05
-  Bullet: {fileID: 5505565898394202133, guid: 735b09013a847694a875949fe0a71157, type: 3}
+  Bullet: {fileID: 5505565898394202133, guid: 3d3e53320de3f8c41a5c9dcef50b31b9, type: 3}
   bulletSpawnPoint: {fileID: 2015371247}
   shootInterval: 0.25
   groundCheck: {fileID: 1227489033}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   deathHitSound: {fileID: 8300000, guid: 61dc2387027f3a54681521c7d2205ea1, type: 3}
   shootSound: {fileID: 8300000, guid: d3d124e6c97063a44860110fced3f81b, type: 3}
   esInvulnerable: 0
@@ -1444,6 +1464,15 @@ MonoBehaviour:
   textoTituloPanel: {fileID: 312280740}
   botonReiniciar: {fileID: 835171425}
   botonNivel1: {fileID: 702923273}
+  monedasDelNivel:
+  - {fileID: 170821307}
+  - {fileID: 158354148}
+  - {fileID: 2127631568}
+  - {fileID: 19809268}
+  - {fileID: 1113467080}
+  - {fileID: 1622542713}
+  - {fileID: 213805014}
+  tiempoAparicionMonedas: 3
 --- !u!82 &622249106
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2513,6 +2542,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0.604, z: 0}
+--- !u!1 &1113467080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 571692910}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1129075105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3148,6 +3182,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1622542713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 857438373}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1742465989 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3025903926295362399, guid: 1ddb4952c945d594fa33504e43b0f662, type: 3}
@@ -4354,6 +4393,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122300438}
   m_CullTransparentMesh: 1
+--- !u!1 &2127631568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6192209555291161662, guid: 124f95ae0669909448d72052f53b7454, type: 3}
+  m_PrefabInstance: {fileID: 1896403142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4820313508282309204
 PrefabInstance:
   m_ObjectHideFlags: 0
