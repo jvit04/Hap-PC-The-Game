@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/a619ff40-5aab-4f53-8f91-bfcc64439bd3
 # Hap-PC - Videojuego 2D
 
 Materia: Lenguajes de Programación | Periodo: 2026 | Estado: Completado
@@ -12,7 +14,10 @@ Materia: Lenguajes de Programación | Periodo: 2026 | Estado: Completado
 <img width="594" height="292" alt="image" src="https://github.com/user-attachments/assets/0a185c84-e1ef-4536-8f40-581463b81cf6" />
 
 
-https://github.com/user-attachments/assets/1083422d-c847-4d90-92f3-e1910f5fc538
+https://github.com/user-attachments/assets/0b3fc60b-6034-48be-9149-076e66dac8f7
+
+
+
 
 
 
